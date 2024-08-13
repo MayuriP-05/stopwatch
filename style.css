@@ -1,0 +1,142 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #C8A1E0;
+    font-family:  Arial, sans-serif;
+
+    color: #432344;
+}
+.ios-UI{
+    background-color: #F2F6FC;
+    width: 430px;
+    height: 700px;
+   padding: 30px 20px;
+   color: #432344;
+    border-radius: 20px;
+}
+#menu{
+    padding: 5px 10px;
+    border: 1px solid rgb(202, 198, 198) ;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+#header{
+
+display: flex;
+justify-content: space-between;
+
+align-items: center;
+}
+#logo{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#display{
+margin: 70px 0px;
+   font-size:50px ; 
+   text-align: center;
+   font-weight:900;
+
+   background-size: cover;
+  
+
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 800px;
+    padding:  7px 14px;
+    border: 3px solid white;
+  border-radius: 10px;
+  background-color: #c2d6f8 ;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #432344;
+}
+#startstopbtn{
+    background-color: #FDD684;
+}
+#lapbox{
+margin: 50px 10px;
+height: 50%;
+overflow-y: auto;
+overflow-x: hidden; 
+scrollbar-width: thin;
+padding: 0px 3px;
+
+}
+
+
+
+.lap-item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #EDF2FC ;
+    margin: 10px 0px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 9px 20px;
+    border-radius: 10px;
+    border: 3px solid white;
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #432344;;
+ 
+    
+   
+}
+.delete-icon {
+    display: none;
+    color: #432344;
+    
+    
+    cursor: pointer;
+
+
+}
+
+
+.lap-item:hover .delete-icon {
+    display: block;
+}
+
+.lap-item:hover .lap-number,
+.lap-item:hover .lap-time {
+    display: none;
+}
+
+
+.lap-item:hover {
+    background-color: #FDD684;
+    color: white;
+ 
+    font-size: 1.6rem;
+   justify-content: center;
+   transition: background-color 0.10s ease, color 0.10s ease;
+}
+#lapbox::-webkit-scrollbar {
+    width: 4px; /* Set this to your desired width */
+}
+
+/* Style the scrollbar thumb */
+#lapbox::-webkit-scrollbar-thumb {
+    background-color: #cccccc; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for a smoother look */
+}
+
+/* Optional: Change the color when hovering over the scrollbar thumb */
+#lapbox::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}
